@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoprocessing Modeler</title>
+    <link rel="stylesheet" href="../style.css">
+    </head>
+</style>
+</head>
+    <div class="project-card">
+<h2>Parametri in ingresso
+</h2>
+<h3>Aree boscate 2007</h3>
+<p>Layer vettoriale di tipo poligono - utilizzato per determinare quali aree destinate a bosco nel 2007 sono state trasformate in aree estrattive entro il 2013</p>
+<h3>Aree del Parco</h3>
+<p>Layer vettoriale di tipo poligono - Identificazione delle aree destinate alla riserva protetta del Parco delle Apuane, alle aree contigue e alle aree di cava</p>
+<h3>Aree reperimento materiali storici (MOS)</h3>
+<p>Layer vettoriale di tipo poligono - Identificazione delle aree estrattive di materiali storici</p>
+<h3>Doline</h3>
+<p>Layer vettoriale di tipo punto - Identificazione puntuale delle aree carsiche di tipo dolina</p>
+<h3>Ecosistemi_tutelati</h3>
+<p>Layer vettoriale di tipo punto - Identificazione puntuale delle zone di rilevamento di habitat naturali, di specie vegetali e animali protetti</p>
+<h3>Influenza ambiente aree cava 2019</h3>
+<p>Layer vettoriale di tipo poligono - Identificazione delle aree estrattive</p>
+<h3>MDT 20m pendenza</h3>
+<p>MDT raster pendenza - Modello Digitale del Terreno utilizzato per il calcolo della pendenza delle aree estrattive</p>
+<h3>Sorgenti carsiche</h3>
+<p>Layer vettoriale di tipo punto - Identificazione puntuale delle sorgenti carsiche</p>
+<h2>Risultati</h2>
+<h3>Aree_estrattive con maggior impatto ambientale</h3>
+<p>Determinazione delle aree estrattive che hanno avuto maggior influenza su ecosistemi naturali e che presentano una pendenza media superiore al 40% aumentando i rischi idrogeologici dell'area:
+    <ul class="use-case-list">
+    <li>calcolo pendenza media di ogni area di cava (al05: statistiche zonali per determinazione pendenza media)</li>
+    <li>estrazione aree di cava con pendenza superiore al 40% (al05a: estrai per attributo)</li>
+    <li>determinazione aree con maggior influenza (al06: estrai per posizione)</li>
+    </ul>
+</p>
+<h3>Aree estrattive interne al parco</h3>
+<p>Selezione delle aree estrattive che ricadono all'interno del Parco Regionale delle Alpi Apuane:
+    <ul class="use-case-list">
+    <li>nuove aree estrattive definite tra il 2007 ed il 2013 (al01: estrai tramite espressione)</li>
+    <li>tutte le altre aree estrattive che ricadono all'interno del parco (al02a: estrai per posizione)</li>
+    <li>aree di tipo MOS reperimento materiali storici (al02b: intersezione)</li>
+</ul>
+</p>
+<h3>Ecosistemi e carsismo influenzati da aree estrattive</h3>
+<p>Determinazione degli elementi relativi ad ambiente naturale che hanno subito l'influenza delle vicine aree estrattive:
+    <ul class="use-case-list">
+    <li>ecosistemi tutelati, relativi ad habitat, specie vegetali e animali (al03a: buffer 300m + al04a: estrai per posizione)</li>
+    <li>sorgenti carsiche e doline (al03b: buffer 500m + al04b e al04c: estrai per posizione)</li>
+</ul>
+Criteri rispettati:
+<ul>
+<li>buffer 300m</li>
+<li>buffer 500m</li>
+</ul>
+
+</p>
+</div>
+</body>
+

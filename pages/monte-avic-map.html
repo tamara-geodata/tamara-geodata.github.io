@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Mappa Monte Avic</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #01161E;
+            font-family: Arial, sans-serif;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            color: #AEC3B0;
+            padding: 6px 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            background: rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="index.html#project7" class="back-link">← Torna al progetto</a>
+
+<div class="map-container">
+    <iframe src="../web-map/monte-avic/qgis2web/"></iframe>
+</div>
+
+</body>
+</html>
