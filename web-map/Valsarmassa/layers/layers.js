@@ -53,7 +53,7 @@ var lyr_RiservaNaturaleValSarmassaAT_3 = new ol.layer.Vector({
                 source:jsonSource_RiservaNaturaleValSarmassaAT_3, 
                 style: style_RiservaNaturaleValSarmassaAT_3,
                 popuplayertitle: 'Riserva Naturale Val Sarmassa (AT)',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/RiservaNaturaleValSarmassaAT_3.png" /> Riserva Naturale Val Sarmassa (AT)'
             });
 var format_Comuni_Piemonte_4 = new ol.format.GeoJSON();

@@ -389,9 +389,7 @@ body {
 }
 
 /* SCROLL SMOOTH */
-html {
-    scroll-behavior: smooth;
-}
+/*--ELIMINATA--*/
 
 /* TITOLO SEZIONE VISIBILE */
 section {

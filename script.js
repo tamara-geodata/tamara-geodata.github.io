@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             previews.forEach(p => p.classList.remove("active"));
             this.classList.add("active");
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.scrollTo(0, 0);
         });
     });
 
